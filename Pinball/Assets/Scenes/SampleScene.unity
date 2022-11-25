@@ -121,26 +121,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &17769810 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -6422311251598750712, guid: d7badd5886aaac048bb6cb84a38bf47e,
-    type: 3}
-  m_PrefabInstance: {fileID: 1919588225}
-  m_PrefabAsset: {fileID: 0}
---- !u!64 &17769812
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 17769810}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -4259711050457476377, guid: d7badd5886aaac048bb6cb84a38bf47e, type: 3}
 --- !u!1001 &47360961
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -316,7 +296,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: de22fe286ec111c48949660626ecb292,
         type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: de22fe286ec111c48949660626ecb292,
         type: 3}
@@ -510,7 +490,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: d7badd5886aaac048bb6cb84a38bf47e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.027
+      value: 0.0313
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d7badd5886aaac048bb6cb84a38bf47e,
         type: 3}
@@ -628,7 +608,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: de22fe286ec111c48949660626ecb292,
         type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: de22fe286ec111c48949660626ecb292,
         type: 3}
@@ -1002,9 +982,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startPos: 0
-  endPos: 0
-  power: 10
-  damper: 1
+  endPos: 45
+  power: 100
+  damper: 0.3
   side: 1
   direction: 1
 --- !u!64 &622848967
@@ -1014,11 +994,11 @@ MeshCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 622848964}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 72da149f33d0cc541a034a28cdf53b08, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -7166467982092713323, guid: d7badd5886aaac048bb6cb84a38bf47e, type: 3}
 --- !u!59 &622848968
@@ -1029,10 +1009,10 @@ HingeJoint:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 622848964}
   m_ConnectedBody: {fileID: 0}
-  m_Anchor: {x: 0, y: 0.20252377, z: 0}
-  m_Axis: {x: 1, y: 0, z: 0}
+  m_Anchor: {x: 0, y: 0, z: 0}
+  m_Axis: {x: 0, y: 1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.331, y: 0.0432019, z: -0.1141}
+  m_ConnectedAnchor: {x: -0.331, y: 0.03, z: -0.1141}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -1068,7 +1048,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -1379,9 +1359,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startPos: 0
-  endPos: 0
-  power: 10
-  damper: 1
+  endPos: 45
+  power: 100
+  damper: 0.3
   side: 0
   direction: -1
 --- !u!64 &708524672
@@ -1391,11 +1371,11 @@ MeshCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 708524669}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 72da149f33d0cc541a034a28cdf53b08, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -7166467982092713323, guid: d7badd5886aaac048bb6cb84a38bf47e, type: 3}
 --- !u!59 &708524673
@@ -1406,10 +1386,10 @@ HingeJoint:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 708524669}
   m_ConnectedBody: {fileID: 0}
-  m_Anchor: {x: 0, y: 0.20252377, z: 0}
-  m_Axis: {x: 1, y: 0, z: 0}
+  m_Anchor: {x: 0, y: 0, z: 0}
+  m_Axis: {x: 0, y: 1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.1583, y: 0.0432019, z: -0.1151}
+  m_ConnectedAnchor: {x: -0.1583, y: 0.0313, z: -0.1151}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -1445,7 +1425,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -1533,7 +1513,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: de22fe286ec111c48949660626ecb292,
         type: 3}
       propertyPath: m_RootOrder
-      value: 17
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: de22fe286ec111c48949660626ecb292,
         type: 3}
@@ -1848,26 +1828,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bfbb6cbaf1dceb34bbf152345c5fd4c7, type: 3}
---- !u!1 &1170282630 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -6422311251598750712, guid: d7badd5886aaac048bb6cb84a38bf47e,
-    type: 3}
-  m_PrefabInstance: {fileID: 184048002}
-  m_PrefabAsset: {fileID: 0}
---- !u!64 &1170282632
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1170282630}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -4259711050457476377, guid: d7badd5886aaac048bb6cb84a38bf47e, type: 3}
 --- !u!1 &1178909354
 GameObject:
   m_ObjectHideFlags: 0
@@ -2650,7 +2610,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: d7badd5886aaac048bb6cb84a38bf47e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.027
+      value: 0.03
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d7badd5886aaac048bb6cb84a38bf47e,
         type: 3}
