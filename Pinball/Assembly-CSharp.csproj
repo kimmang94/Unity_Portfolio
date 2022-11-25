@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scrips\Bumper.cs" />
+    <Compile Include="Assets\Scrips\Flipper.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
